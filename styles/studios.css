@@ -1,0 +1,101 @@
+/*          CONTENT PART          */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#gallery__container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.gallery__card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5% 5% 0 5%;
+    border: 2px solid bisque;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0.7em;
+}
+.gallery__card:hover {
+    background-color: rgb(246, 204, 142);
+    transition: 100ms;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+}
+h2:hover {
+    font-size: 2em;
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+h3 {
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
+}
+
+p, span {
+    font-size: 0.9em;
+    display: inline-block;
+    margin: 0.1em;
+}
+
+.bold__text {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.alterego {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+img {
+    width: 20vw;
+    height: 30vh;
+    margin: 1em;
+}
+
+/*          RAITING PART          */
+
+.icon {
+    /* goldenrod */
+    fill: black ;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: -3px;
+    left: 1px;
+}
+
+.container__label {
+    position: relative;
+}
+
+.container__input {
+    /* display: none; */
+    position: relative;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* svg {
+    margin-top: 1.2em;
+} */
+
+.labels {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2em;
+    margin-top: 2em;
+}

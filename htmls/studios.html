@@ -5,14 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../styles/studios.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/intro.css">
+
     <link rel="stylesheet" href="../styles/normalize.css">
+
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 
     <title>List of animation studios</title>
 </head>
 
 <body>
-    <section id="gallery__container"></section>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__logo">
+            <a class="header__logo-link" href="airportOVB.html">
+                <div class="header__home-click"></div>
+            </a>
+        </div>
+        <nav class="header__menu">
+            <a class="header__link" href="#">Departures <i class="fa fa-solid fa-bus" aria-hidden="true"></i></a>
+            <a class="header__link" href="#">Arrivals <i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+            <a class="header__link" href="#">About <i class="fa fa-magic" aria-hidden="true"></i></a>
+            <a class="header__link" href="#"></a>
+            <a class="header__link" href="#">Contacts <i class="fa fa-phone" aria-hidden="true"></i></a>
+        </nav>
+    </header>
+
+    <!-- MAIN BLOCK -->
+    <main class="main">
+        <!-- INTRO PART -->
+        <section class="intro" style="background-image: url('../imgs/river.jpg');">
+            <div class="intro__project-name">
+                <h1 class=" intro__title title-text">Animate <i class="fa fa-pagelines" aria-hidden="true"></i></h1>
+            </div>
+
+            <div class="intro__project">
+                <img class="intro__project-img" id="img_to_change" src="../Imgs/delta.jpg" alt="Project image">
+            </div>
+        </section>
+
+        <!-- CONTENT PART -->
+        <section class="content__container">
+            <div id="gallery__container"></div>
+            <div id="aside"></div>
+        </section>
+
+    </main>
 
     <script src="../JS's/studios.js"></script>
 </body>

@@ -202,12 +202,6 @@ if (localStorage.length != 0) {
         console.log('with value ' + localStorage[key]);
     })
 
-    // const inputs = document.querySelectorAll('.container__input');
-    // console.log(inputs);
-    
-    // const icons = document.querySelectorAll('.icon');
-    // console.log(icons);
-
     // const form = document.querySelectorAll('form');
     // console.log(form);
 

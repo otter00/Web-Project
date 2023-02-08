@@ -5,10 +5,18 @@ body {
     padding: 0;
 }
 
-#gallery__container {
+.content__container {
     display: grid;
+    grid-template-columns: 40% 1fr;
+}
+
+#gallery__container {
+    display: flex;
+    flex-direction: column;
+
+    /* display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); */
 }
 
 .gallery__card {

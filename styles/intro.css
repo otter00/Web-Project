@@ -1,0 +1,52 @@
+/*INTRO*/
+
+/* desktop */
+
+.intro {
+    grid-template-rows: [intro-title-start intro-image-start] 56% [btns-start] 28% [slides-start] 1fr [intro-image-end];
+    grid-template-columns: 9.4vw [intro-content-start] minmax(300px, 40%) [intro-image-start] 1fr [intro-image-end] 9.4vw;
+    display: grid;
+    min-height: max-content;
+
+    padding: 12% 0 12% 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    z-index: 1; /* in order not to cover log-in form */
+}
+
+.intro__project-name {
+    grid-row-start: intro-title-start;
+    grid-column-start: intro-content-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+
+    letter-spacing: 7px;
+}
+
+.title-text {
+    font-size: 5vw;
+    line-height: 10vh;
+    font-style: italic;
+    font-weight: 500;
+    color: #ecf3ef;
+}
+
+.intro__project {
+    grid-area: intro-image-start / intro-image-start / intro-image-end / intro-image-end;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* general */
+
+.intro__project-img {
+    max-width: 100%;
+}

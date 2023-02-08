@@ -1,0 +1,197 @@
+/*      GENERAL     */
+
+html {
+    max-width: 1600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', 'Source Sans Pro', sans-serif;
+    max-width: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    row-gap: 60px;
+}
+
+/* general */
+
+a {
+    text-decoration: none;
+}
+
+p,
+h1,
+h2 {
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box; /* means that all the things inside have internal limits in order to hide y-scroll */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*      FORM STYLES     */
+
+
+.login-form__container {
+    width: 100%;
+    min-height: 100vh;
+
+    /*     ELEMS-POSITIONING    */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    /*      BG-POSITIONING     */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    z-index: 1; /* in order not to cover log-in form */
+}
+
+.login-form__wrapper {
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: 0 0;
+
+    padding: 30px 0 50px 0;
+}
+
+.login-form__title {
+    padding-bottom: 41px;
+    font-family: Ubuntu-Bold;
+    font-size: 32px;
+    color: black;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+
+.login-form {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+
+    padding: 5px 0 33px 0;
+}
+
+.validate-input, .gender {
+    position: relative;
+}
+
+.wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 29px 0;
+}
+
+.input {
+    font-family: Ubuntu-Regular;
+    font-size: 20px;
+    color: rgb(4, 55, 0);
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: 0 0;
+    padding: 0 10px 0 80px;
+    transition: all .4s;
+}
+
+.gender {
+    font-family: Ubuntu-Regular;
+    color: rgb(119, 119, 119);
+    line-height: 1.2;
+    font-size: 20px;
+
+    display: flex;
+    padding: 29px 10px 29px 80px;
+}
+
+.gender__radio {
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-login-form__btn {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.login-form__btn {
+    font-family: Ubuntu-Bold;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 42px;
+    border-radius: 21px;
+    position: relative;
+    background: -webkit-linear-gradient(left,#00360e,#004d13,#351600);
+}
+
+/*      SUB-GENERAL     */
+
+
+button {
+    border: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+/*     CURSOR-SETTINGS    */
+
+
+.login-form__btn:hover {
+    cursor: pointer;
+}
+
+
+#errorMsg {
+    font-family: Ubuntu-Bold;
+    font-size: 21px;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(127, 3, 3);
+
+    display: flex;
+    justify-content: center;
+}

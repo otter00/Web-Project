@@ -1,6 +1,31 @@
-/*INTRO*/
+/* ANIMATION */
 
-/* desktop */
+.container__bubbling {
+    transform: scale(1.5, 1.5);
+    transform-origin: bottom;
+    width: 65%;
+    margin: auto;
+}
+
+.container__bubbling > div {
+    margin-top: 50px;
+}
+
+.bubble {
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid #665610;
+    border-radius: 6px;
+    background-color: rgba(0, 5, 0, 0.2);
+    cursor: pointer;
+}
+
+.active {
+    background-color: #FFD829;
+}
+
+
+/*INTRO*/
 
 .intro {
     grid-template-rows: [intro-title-start intro-image-start] 56% [btns-start] 28% [slides-start] 1fr [intro-image-end];
@@ -9,6 +34,7 @@
     min-height: max-content;
 
     padding: 12% 0 12% 0;
+    margin-bottom: 3%;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -16,6 +42,8 @@
     position: relative;
 
     z-index: 1; /* in order not to cover log-in form */
+
+    box-shadow: 0 0 10px 7px rgba(221, 221, 221, 1);
 }
 
 .intro__project-name {
@@ -34,7 +62,7 @@
     line-height: 10vh;
     font-style: italic;
     font-weight: 500;
-    color: #ecf3ef;
+    color: rgba(221, 221, 221, 0.8);
 }
 
 .intro__project {
@@ -44,8 +72,6 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-
-/* general */
 
 .intro__project-img {
     max-width: 100%;

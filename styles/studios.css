@@ -8,11 +8,13 @@ body {
 .content__container {
     display: grid;
     grid-template-columns: 40% 1fr;
+    gap: 2%;
 }
 
 #gallery__container {
     display: flex;
     flex-direction: column;
+    margin-left: 2%;
 
     /* display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -24,8 +26,9 @@ body {
     flex-direction: column;
 
     padding: 5% 5% 0 5%;
-    border: 2px solid bisque;
-    background-color: blanchedalmond;
+    /* border: 2px solid rgb(238, 238, 238); */
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    background-color: rgb(238, 238, 238);
     border-radius: 10px;
     text-align: center;
     margin: 0.7em;
@@ -68,8 +71,8 @@ p, span {
 }
 
 img {
-    width: 20vw;
-    height: 30vh;
+    width: 25vw;
+    height: 32vh;
     margin: 1em;
 }
 

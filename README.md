@@ -4,15 +4,18 @@
 
 - Log In form
 - Stars styled raiting saved to/from LocalStorage
+- Animation JS/CSS
+- Modules
 
 ## Requirements
-- [X] HTML
-- [X] CSS
-- [X] JS
-- [X] Forms
+
+- [x] HTML
+- [x] CSS
+- [x] JS
+- [x] Forms
 - [ ] Python
 - [ ] PHP
 - [ ] AJAX
-- [X] JSON
+- [x] JSON
 - [ ] XML (fetch?)
-- [X] Local Storage
+- [x] Local Storage

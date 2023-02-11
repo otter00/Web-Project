@@ -1,6 +1,6 @@
 /* ANIMATION */
 
-.container__bubbling {
+/* .container__bubbling {
     transform: scale(1.5, 1.5);
     transform-origin: bottom;
     width: 65%;
@@ -22,7 +22,7 @@
 
 .active {
     background-color: #4c6146ad;
-}
+} */
 
 
 /*INTRO*/
@@ -54,7 +54,7 @@
     justify-content: center;
     text-transform: uppercase;
 
-    letter-spacing: 7px;
+    letter-spacing: 9px;
 }
 
 /* .title-text {
@@ -76,8 +76,6 @@
 .intro__project-img {
     max-width: 100%;
 }
-
-
 
 /* ANIMATED TEXT */
 

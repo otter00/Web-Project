@@ -1,7 +1,5 @@
 /*      HEADER      */
 
-/* desktop */
-
 .header {
     display: grid;
     grid-template-columns: 9vw [header-logo-start] minmax(300px, 40%) [header-menu-start] 1fr;
@@ -10,14 +8,14 @@
     box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.9);
 }
 
-.header__logo {
+/* .header__logo {
     position: relative;
     grid-column-start: header-logo-start;
     height: 100%;
     background-image: url(../Imgs/snowflake\ \(2\).png);
     background-repeat: no-repeat;
     background-position: left center;
-}
+} */
 
 .header__menu {
     grid-column-start: header-menu-start;
@@ -32,8 +30,6 @@
     font-family: Ubuntu-Bold;
     /* Добавила здесь border чтобы ссылки не прыгали при наведении курсора. Потому что при наведении появляется оформление border снизу и сверху (Юля) */
 }
-
-/* general */
 
 .header__home-click {
     position: absolute;

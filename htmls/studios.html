@@ -25,7 +25,7 @@
     <!-- HEADER -->
     <header class="header">
         <div class="header__logo">
-            <a class="header__logo-link" href="airportOVB.html">
+            <a class="header__logo-link" href="">
                 <div class="header__home-click"></div>
             </a>
         </div>
@@ -123,7 +123,18 @@
         <!-- CONTENT PART -->
         <section class="content__container">
             <div id="gallery__container"></div>
-            <div id="aside"></div>
+
+            <div class="aside__container">
+                <div id="aside">
+                    <h1>Type a gif to find</h1>
+                    <div class="aside__search">
+                        Search:
+                        <input type="text" id="gif__search" />
+                        <button id="search__button" onclick="onSearch();">Find it for me!</button>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
     </main>
@@ -133,6 +144,7 @@
     <script src="../JS's/anime.min.js"></script>
     <script src="../JS's/studios.js"></script>
     <script src="../JS's/animation.js"></script>
+    <script src="../JS's/API.js"></script>
 </body>
 
 </html>

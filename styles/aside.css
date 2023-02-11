@@ -1,6 +1,29 @@
-#aside {
+.aside__container {
     border: 1px solid black;
     padding: 5% 5% 0 5%;
     margin: 0.7em;
     margin-right: 3%;
+}
+
+.pics__container {
+    display: flex;
+    justify-content: center;
+}
+
+.aside__search, h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: 600;
+}
+
+#search__button {
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    background-color: rgb(238, 238, 238);
+    border: none;
 }

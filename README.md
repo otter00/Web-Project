@@ -15,7 +15,8 @@
 - [x] Forms
 - [ ] Python
 - [ ] PHP
-- [ ] AJAX
+- [x] AJAX
 - [x] JSON
-- [ ] XML (fetch?)
+- [x] XML (fetch?)
 - [x] Local Storage
+- [x] API

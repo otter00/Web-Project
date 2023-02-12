@@ -54,7 +54,7 @@ var json = `[{
     "info": "Студия компьютерной анимации «Петербург» — российская анимационная студия, расположенная в Санкт-Петербурге. Наиболее известна производством мультипликационного сериала «Смешарики», за который авторы были удостоены Государственной премии Российской Федерации в области культуры и искусства за 2008 год. В 2016 году права на трансляцию большинства мультсериалов получает ВГТРК."
 },{
     "name": "DreamWorks",
-    "universe": "Animation studio ",
+    "universe": "Animation studio",
     "founded": "October 12, 1994",
     "founders": "Steven Spielberg, Jeffrey Katzenberg, David Geffen",
     "products": "Television animated series, theatrical animated feature films, theatrical animated short films",
@@ -63,16 +63,38 @@ var json = `[{
     "info": "DreamWorks Animation LLC is an American animation studio that produces animated films and television programs and is a subsidiary of Universal Pictures, a division of NBCUniversal, which is itself a division of Comcast. The studio has released 44 feature films as of December 2022, including several of the highest-grossing animated films of all time, with Shrek 2 (2004) having been the highest at the time of its release."
 }]`;
 
+var links = `[{
+    "link": "https://en.wikipedia.org/wiki/Walt_Disney_Animation_Studios"
+},{
+    "link": "https://ru.wikipedia.org/wiki/Мельница_(кинокомпания)"
+}, {
+    "link": "https://en.wikipedia.org/wiki/Pixar"
+},{
+    "link": "https://ru.wikipedia.org/wiki/Союзмультфильм"
+},{
+    "link": "https://ru.wikipedia.org/wiki/Studio_Ghibli"
+},{
+    "link": "https://ru.wikipedia.org/wiki/Петербург_(студия_анимации)"
+},{
+    "link": "https://en.wikipedia.org/wiki/DreamWorks_Animation"
+}]`;
+
 document.addEventListener('DOMContentLoaded', function (e) {
     let cards = JSON.parse(json);
     console.log(cards);
 
+    let hrefs = JSON.parse(links);
+    // console.log(hrefs[0].link);
+    // console.log(hrefs[5].link);
+
     let cardsContent = "";
     let counter = 1; //dynamic form id
+    let href = 0; //dynamic link
 
     for(let card of cards) {
+    {
         cardsContent += `<div class='gallery__card'>
-        <h2 class='card__name'>${card.name}</h2>` + 
+        <h2 class='card__name'><a class='name__link' href='${hrefs[href].link}'>${card.name}</a></h2>` + 
         `<form id='${counter}' action="#">
         <h3>${card.universe}</h3>
         <span><p class='bold__text'>Founded:</p> ${card.founded}</span> 
@@ -122,7 +144,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
         </div>`;
         counter++; //increment the value
+        href++;
     }
+}
     //console.log(cardsContent);
 
     //set cards into document

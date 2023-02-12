@@ -27,3 +27,11 @@ h1 {
     background-color: rgb(238, 238, 238);
     border: none;
 }
+
+#clock{
+    color: rgba(237, 237, 237, 1);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 0.3em;
+}

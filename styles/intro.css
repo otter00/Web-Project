@@ -69,8 +69,16 @@
     grid-area: intro-image-start / intro-image-start / intro-image-end / intro-image-end;
     position: relative;
     display: flex;
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
+}
+
+.JS__clock {
+    /* FOR JS-CLOCK */
+    justify-content: flex-start;
     flex-direction: column;
-    justify-content: flex-end;
+    margin-top: 7em;
+    align-items: center;
 }
 
 .intro__project-img {

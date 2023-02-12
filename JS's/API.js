@@ -36,5 +36,5 @@ function onSearch() {
         }
     })
     .catch(error => alert(error))
-    .finally(alert(`Work's done`));
+    .finally(console.log(`Work's done`));
 }

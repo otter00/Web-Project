@@ -1,6 +1,6 @@
 # Web-Project for Web Development (SUAI labs)
 
-`GitHub Pages link: `
+`GitHub Pages link: `https://otter00.github.io/Web-Project/
 
 - Log In form
 - Stars styled raiting saved to/from LocalStorage

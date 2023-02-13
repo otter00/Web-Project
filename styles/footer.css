@@ -1,3 +1,90 @@
-.footer__container {
-    height: 200px;
+.footer {
+    display: grid;
+    grid-template-rows: 300px 70px;
+    grid-template-columns: [footer-start] 10% [footer-content-start] 1fr [footer-end];
+    align-content: start;
+    padding-top: 58px;
+    margin-top: 5vh;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-rows: 45px [footer-address-start footer-social-start] 40px 40px [footer-address-end footer-phone-start] 40px 40px [footer-phone-end] 40px [footer-social-end];
+    grid-template-columns: 33% [footer-contact-start] 33% [footer-contact-end footer-social-start] 33% [footer-social-end];
+}
+
+.footer__address {
+    grid-area: footer-address-start / footer-contact-start / footer-address-end / footer-contact-end;
+    display: flex;
+}
+
+.footer__mail {
+    grid-area: footer-phone-start / footer-contact-start / footer-phone-end / footer-contact-end;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social {
+    grid-area: footer-social-start / footer-social-start / footer-social-end / footer-social-end;
+}
+
+.footer__social-link {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.footer__copyright {
+    grid-column-start: footer-start;
+    grid-column-end: footer-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* general */
+
+.footer {
+    color: #FFFFFF;
+    background-color: #2C2C2C;
+    font-family: Ubuntu-Bold;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+}
+
+.footer__link,
+.footer__text {
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.375rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 1.375rem;
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    opacity: 0.1;
+}
+
+.footer__social-link {
+    color: white; 
+    text-transform: uppercase;
+}
+
+#footer__span:hover {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    transform: scale(1.1);
+    font-size: 1em;
+    transition: 300ms;
 }
